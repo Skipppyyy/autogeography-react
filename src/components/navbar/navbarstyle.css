@@ -1,0 +1,124 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+
+/*variables are VERY local, align-items for nav-menu tag is only for items within the nav-menu display box*/
+.navbar .container { /*applies to all elements with or within both navbar and container classes*/
+    display: flex; /*display for internal elements is flex*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex; /*adaptive display for internal elements*/
+    align-items: center; /*centers within its own display*/
+    color: #f6f6f6;
+    margin: 1rem;
+    z-index: 5;
+}
+
+.hamburger {
+    display: none; /*none means to hide*/
+    padding: 1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-menu {
+    display: flex; /*displays internal elements horizontally*/
+}
+
+.nav-menu li { 
+    padding: 1rem; /*can set more specific details for specific elements inside nav menu*/
+}
+
+.nav-menu li a {
+    color: #f6f6f6; /*and even more specific, such as text color for <a>*/
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 940px) { /*@media tag allows to adjust CSS based on device/display, here we apply tag if match media type AND max-width constraint*/
+    .hamburger {
+        display: block;
+        z-index: 5; /* specifies element stack order, without this click isnt registered */
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center; /* elements within this class or centered */
+        width: 60%;
+        height: 100vh;
+        background: var(--primary-color); /*use css variable*/
+        top: 0; /*how far top of element from top of containing block*/
+        right: -100%; /*starts off screen*/
+        transition: 0.9s ease-in-out;
+    }
+    
+
+    .active {
+        right: 0; /*if active, then show nav-menu*/
+
+    }
+
+    .nav-menu li {
+        margin: .5rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1.2rem; /*if in css write class name like this, it means a tag inside li tag inside nav-menu class (. means class)*/
+    }
+
+    .nav-menu li:hover { /*:___ means an action, :hover then for li elements in .nav-menu apply this animation*/
+        border-bottom: 1px solid #aaa;
+        width: 175px;
+    }
+
+    .nav-menu button { /*button tags on nav-menu class*/
+        margin: 1rem auto;
+        padding: .7rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        border: none;
+        background: rgba(255, 255, 255, 0.3);
+        width: 100%; /*expands element fully within container*/
+        color: #f6f6f6; 
+    }
+
+    .nav-menu button:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    .nav-menu .icon {
+        color: #f8f8f8cc;
+        font-size: 1.4rem;
+    }
+
+    .hide {
+        display: none; /*in css, if space between class names -> both classes*/
+    }
+
+}
+
+@media screen and (max-width: 495px) { /* for phones */
+    .nav-menu {
+        width: 75%;
+    }
+}
