@@ -7,12 +7,17 @@ import {FiInstagram, FiFacebook} from 'react-icons/fi'
 
 export default function Navbar() {
     const [nav, setNav] = useState(false); 
-    const handleNav = () => setNav(!nav);
+    const [slide, setSlide] = useState(false); // when to slide and when to not -> useState for that, only when button clicked
+    
+    const handleToggle = () => {
+        setNav(!nav);
+        setSlide(!slide); // so if false, then change to true on click and vice versa
+    }
 
     return ( // tags are jsx not html, a lil diff
         <div className = "navbar"> 
             <div className = 'container'>
-                <div className = 'logo'>
+                <div className = {slide ? 'logo slide-right' : 'logo'}>
                     Pals, Spain
                 </div>
 
@@ -39,7 +44,7 @@ export default function Navbar() {
                     <li><a href = "/">Account</a></li> 
                 </ul>
 
-                <div className="hamburger" onClick={handleNav}> 
+                <div className="hamburger" onClick={handleToggle}> 
                     {nav ? (<FaTimes size = {20} style={{color:'#ffffff'}}/>) : (<FaBars size = {20} style={{color:'#ffffff'}}/>)} {/*here {key: value} is prop, and because that is js object needs to be in own {}*/}
                 </div>
             </div>

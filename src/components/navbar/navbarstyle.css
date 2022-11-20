@@ -63,7 +63,8 @@
         background: var(--primary-color); /*use css variable*/
         top: 0; /*how far top of element from top of containing block*/
         right: -100%; /*starts off screen*/
-        transition: 0.9s ease-in-out;
+        transition: 0.8s ease-in-out;
+        font-size: 0.8em;
     }
     
 
@@ -115,10 +116,20 @@
         display: none; /*in css, if space between class names -> both classes*/
     }
 
+    .navbar .slide-right {
+        margin-left: 45%;
+        transition: 0.8s ease-in-out;
+    }
+
 }
 
 @media screen and (max-width: 495px) { /* for phones */
     .nav-menu {
         width: 75%;
+    }
+
+    .navbar .slide-right {
+        margin-left: 30%;
+        transition: 0.8s ease-in-out;
     }
 }
