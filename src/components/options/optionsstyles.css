@@ -1,0 +1,34 @@
+.options {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../../media/test.jpg') no-repeat center center/cover; /*sets background of element, center/cover is position and size*/
+}
+
+.options .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .top {
+    margin-top: 7rem;
+    color: #f6f6f6;
+}
+
+.options .bottom {
+    display: flex; /*places in horizontal order*/
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 540px) {
+    .options .container .bottom { /*can address unique parts via class names*/
+        flex-direction: column; 
+        align-items: center;
+    }
+}
