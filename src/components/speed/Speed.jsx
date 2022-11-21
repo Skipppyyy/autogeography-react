@@ -3,7 +3,7 @@ import './speedstyles.css';
 
 const Speed = () => {
     return (
-        <div className='speed'>
+        <div name='speed' className='speed'>
             <div className='container'>
                 <div className='top'> 
                     <h1>Speed</h1>

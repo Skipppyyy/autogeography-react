@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './navbarstyle.css'
+import { Link } from 'react-scroll'
 // icons
 import {FaBars, FaTimes, FaFacebook, FaInstagram} from 'react-icons/fa' // need pretexts /fa or whatever is the right one
 import {GiCarWheel} from 'react-icons/gi'
@@ -22,12 +23,11 @@ export default function Navbar() {
                 </div>
 
                 <ul className = {nav ? 'nav-menu active' : 'nav-menu'}> 
-                    <li><a href = "/">Introduction</a></li>
-                    <li><a href = "/">Religion</a></li>
-                    <li><a href = "/">Commerce</a></li>
-                    <li><a href = "/">Conflict</a></li>
-                    <li><a href = "/">Why This Matters</a></li>
-
+                    <li><a href = "/"><Link activeClass="active" to="power" spy={true} smooth={true} duration={500}>Introduction</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="speed" spy={true} smooth={true} duration={500}>Religion</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="handling" spy={true} smooth={true} duration={500}>Commerce</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="options" spy={true} smooth={true} duration={500}>Conflict</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Why This Matters</Link></a></li>
                     <div className = "mobile-menu">
                         <button>Shop</button>
                         <button>Account</button>

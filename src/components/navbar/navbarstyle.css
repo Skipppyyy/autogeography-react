@@ -104,7 +104,7 @@
     }
 
     .nav-menu .social-icons {
-        display: flex;
+        display: flex; /*spreads out within container by default*/
         justify-content: space-evenly;
         margin: 1rem;
     }
