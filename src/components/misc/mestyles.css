@@ -16,9 +16,13 @@
 }
 
 .me .top {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     color: #f6f6f6;
 }
 
+.me .cred {
+    color:#f6f6f6;
+    font-weight: 600;
+}
 
 
