@@ -23,6 +23,7 @@ export default function Navbar() {
                 </div>
 
                 <ul className = {nav ? 'nav-menu active' : 'nav-menu'}> 
+                    <li><a href = "/"><Link activeClass="active" to="me" spy={true} smooth={true} duration={500}>About Me</Link></a></li>
                     <li><a href = "/"><Link activeClass="active" to="intro" spy={true} smooth={true} duration={500}>Introduction</Link></a></li>
                     <li><a href = "/"><Link activeClass="active" to="commerce" spy={true} smooth={true} duration={500}>Commerce</Link></a></li>       
                     <li><a href = "/"><Link activeClass="active" to="conflict" spy={true} smooth={true} duration={500}>Conflict</Link></a></li>

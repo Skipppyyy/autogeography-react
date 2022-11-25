@@ -1,10 +1,7 @@
 .sowhat {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../../media/palsmatters.jpg') no-repeat center center/cover; /*sets background of element, center/cover is position and size*/
-    background-size: cover;
-    background-position-y: -700px;
-    background-position-x: ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../media/palsmatters.jpg') no-repeat center center/cover; /*sets background of element, center/cover is position and size*/
 }
 
 .sowhat .container {

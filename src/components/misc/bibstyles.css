@@ -1,0 +1,20 @@
+.bib {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: black; 
+    justify-content: center;
+}
+
+.bib .container {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.bib .top {
+    margin-top: 7rem;
+    color: #f6f6f6;
+}

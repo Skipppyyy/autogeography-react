@@ -69,3 +69,11 @@ h3 {
 .btn-dark:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 940px) {
+  h3 {
+    font-size: 0.8rem;
+    color: #f2ebeb;
+    font-weight: 100;
+  }
+}

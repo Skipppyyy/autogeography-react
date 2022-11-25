@@ -1,0 +1,24 @@
+.me {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../../media/seattle.jpg') no-repeat center center/cover; /*sets background of element, center/cover is position and size*/
+}
+
+.me .container {
+    display: flex;
+    margin-left: 45%;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /*horizontal axis perpendicular to flex direction (cross axis), horiz location. justify-content aligns on main axis (item vert distance)*/
+    gap: 0.6em;
+}
+
+.me .top {
+    margin-top: 5rem;
+    color: #f6f6f6;
+}
+
+
+
