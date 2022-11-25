@@ -6,7 +6,7 @@ const Me = () => {
         <div name="me" className="me">
             <div className="container"> 
                 <div className="top">
-                    <h1>About Mee</h1>
+                    <h1>About Me</h1>
                 </div>
 
                 <div className="textbox">
