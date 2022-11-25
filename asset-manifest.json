@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/autogeography-react/static/css/main.08a228b7.css",
-    "main.js": "/autogeography-react/static/js/main.824260ee.js",
+    "main.js": "/autogeography-react/static/js/main.1ae85545.js",
     "static/media/seattle.jpg": "/autogeography-react/static/media/seattle.9050096a5b517686991e.jpg",
     "static/media/palswalls.jpg": "/autogeography-react/static/media/palswalls.68a59ad6c2e0f4e1ae2f.jpg",
     "static/media/palschurch.jpg": "/autogeography-react/static/media/palschurch.c7044d9172186adc813b.jpg",
@@ -10,10 +10,10 @@
     "static/media/palsmatters.jpg": "/autogeography-react/static/media/palsmatters.c26360b125641dbc2715.jpg",
     "index.html": "/autogeography-react/index.html",
     "main.08a228b7.css.map": "/autogeography-react/static/css/main.08a228b7.css.map",
-    "main.824260ee.js.map": "/autogeography-react/static/js/main.824260ee.js.map"
+    "main.1ae85545.js.map": "/autogeography-react/static/js/main.1ae85545.js.map"
   },
   "entrypoints": [
     "static/css/main.08a228b7.css",
-    "static/js/main.824260ee.js"
+    "static/js/main.1ae85545.js"
   ]
 }
