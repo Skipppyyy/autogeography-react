@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e7fba78.css",
+    "main.js": "/static/js/main.824260ee.js",
+    "static/media/seattle.jpg": "/static/media/seattle.9050096a5b517686991e.jpg",
+    "static/media/palswalls.jpg": "/static/media/palswalls.68a59ad6c2e0f4e1ae2f.jpg",
+    "static/media/palschurch.jpg": "/static/media/palschurch.c7044d9172186adc813b.jpg",
+    "static/media/palsmarket.jpg": "/static/media/palsmarket.b87f6ec9bac3c90f30ca.jpg",
+    "static/media/pals1.jpg": "/static/media/pals1.021f76c492d26fec1bbf.jpg",
+    "static/media/palsmatters.jpg": "/static/media/palsmatters.c26360b125641dbc2715.jpg",
+    "index.html": "/index.html",
+    "main.6e7fba78.css.map": "/static/css/main.6e7fba78.css.map",
+    "main.824260ee.js.map": "/static/js/main.824260ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e7fba78.css",
+    "static/js/main.824260ee.js"
+  ]
+}
