@@ -35,7 +35,13 @@ h2 {
 }
 
 h3 { 
-  font-size: 2rem;
+  font-size: 1.05rem;
+  color: #f2ebeb;
+  font-weight: 200;
+}
+
+.textbox {
+  width: 65%;
 }
 
 .btn { /*light button*/

@@ -16,7 +16,7 @@
     display: flex; /*adaptive display for internal elements*/
     align-items: center; /*centers within its own display*/
     color: #f6f6f6;
-    margin: 1rem;
+    margin: 1.05rem;
     z-index: 5;
     font-weight: 600;
 }
@@ -40,9 +40,10 @@
 
 .nav-menu li a {
     color: #f6f6f6; /*and even more specific, such as text color for <a>*/
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 600;
 }
+
 
 @media screen and (max-width: 940px) { /*@media tag allows to adjust CSS based on device/display, here we apply tag if match media type AND max-width constraint*/
     .hamburger {

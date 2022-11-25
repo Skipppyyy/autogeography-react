@@ -1,0 +1,49 @@
+.religion {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../../media/palschurch.jpg') no-repeat center center/cover; /*sets background of element, center/cover is position and size*/
+}
+
+.religion .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 60px;
+}
+
+.religion .top {
+    margin-top: 7rem;
+    color: #f6f6f6;
+}
+
+.religion .bottom {
+    display: flex; /*places in horizontal order*/
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+
+.religion .container .textbox { /*contains textboxes, so can position those, and this as whole gets positioned by parent container*/
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 70%;
+}
+
+.religion .container .textbox .exp {
+    flex: 1 1 0; /*flex grow, shrink, basis order. basis 0 means both elements default at 0. grow = k means each element gets k% of remaining space (50-50 here). shrink = k means if overflow, each element shrinks by k% of excess space (same here) -> result is equal sizes */
+}
+
+.religion .container .textbox .hist {
+    flex: 1 1 0;
+}
+
+@media screen and (max-width: 540px) {
+    .religion .container .bottom { /*can address unique parts via class names*/
+        flex-direction: column; 
+        align-items: center;
+    }
+}

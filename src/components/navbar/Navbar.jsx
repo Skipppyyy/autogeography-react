@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './navbarstyle.css'
 import { Link } from 'react-scroll'
 // icons
-import {FaBars, FaTimes, FaFacebook, FaInstagram} from 'react-icons/fa' // need pretexts /fa or whatever is the right one
+import {FaBars, FaTimes, FaFacebook, FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa' // need pretexts /fa or whatever is the right one
 import {GiCarWheel} from 'react-icons/gi'
 import {FiInstagram, FiFacebook} from 'react-icons/fi'
 
@@ -23,25 +23,22 @@ export default function Navbar() {
                 </div>
 
                 <ul className = {nav ? 'nav-menu active' : 'nav-menu'}> 
-                    <li><a href = "/"><Link activeClass="active" to="power" spy={true} smooth={true} duration={500}>Introduction</Link></a></li>
-                    <li><a href = "/"><Link activeClass="active" to="speed" spy={true} smooth={true} duration={500}>Religion</Link></a></li>
-                    <li><a href = "/"><Link activeClass="active" to="handling" spy={true} smooth={true} duration={500}>Commerce</Link></a></li>
-                    <li><a href = "/"><Link activeClass="active" to="options" spy={true} smooth={true} duration={500}>Conflict</Link></a></li>
-                    <li><a href = "/"><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Why This Matters</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="intro" spy={true} smooth={true} duration={500}>Introduction</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="commerce" spy={true} smooth={true} duration={500}>Commerce</Link></a></li>       
+                    <li><a href = "/"><Link activeClass="active" to="conflict" spy={true} smooth={true} duration={500}>Conflict</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="religion" spy={true} smooth={true} duration={500}>Religion</Link></a></li>
+                    <li><a href = "/"><Link activeClass="active" to="sowhat" spy={true} smooth={true} duration={500}>So What</Link></a></li>
                     <div className = "mobile-menu">
-                        <button>Shop</button>
-                        <button>Account</button>
                         <div className='social-icons'>
-                            <FaFacebook className = "icon"/> 
-                            <FaInstagram className = "icon"/>
-                            <GiCarWheel className = "icon"/>
+                            <FaLinkedin className = "icon"/> 
+                            <FaGithub className = "icon"/>
                         </div>
                     </div>
                 </ul>
 
                 <ul className = 'nav-menu hide'>
-                    <li><a href = "/">Shop</a></li>
-                    <li><a href = "/">Account</a></li> 
+                    <li><a href = "https://www.linkedin.com/in/ethan-shen1219a/"><FaLinkedin className = "icon" size={22}/></a></li>
+                    <li><a href = "https://github.com/Skipppyyy"><FaGithub className = "icon" size={22}/></a></li> 
                 </ul>
 
                 <div className="hamburger" onClick={handleToggle}> 
