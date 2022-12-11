@@ -15,7 +15,7 @@ const Religion = () => {
                     </div>
 
                     <div className='hist'>
-                        <h3>Indeed, in most of Medieval Europe the lives of people revolved around church. It was standard to attend church three to five times daily for prayer and service (Mark). Religion was particularly significant in Spain because of its Muslim, Jewish, and Christian populations. Consequently, religion not only influenced lifestyle in Spain, but also sparked frequent violence. Indeed, in Girona, a large town just twenty minutes away, Jewish-Christian violence was extremely common (Smith 1). Pals likely saw similar clashes. </h3>
+                        <h3>Indeed, in most of Medieval Europe the lives of people revolved around church. It was standard to attend church three to five times daily for prayer and service (Mark). Religion was particularly significant in Spain because of Spain’s mixed Muslim, Jewish, and Christian population. Consequently, religion not only influenced lifestyle in Spain, but also was a frequent source of conflict. Indeed, Jewish-Christian violence was extremely common (Smith 1). Unfortunately, these tensions that defined medieval life are slowly disappearing from memory. For example, behind the famous Cathedral of Barcelona lie the ruins of Barcelona's old Jewish quarter, forgotten and overshadowed by the Cathedral's modern touristic appeal (Horovitz). Today, the Girona region, where Pals is located, is one of the only areas in Spain where medieval Jewish influence remains readily visible.</h3>
                     </div>
             </div>
             </div>
